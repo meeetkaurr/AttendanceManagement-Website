@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Attendance Site</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('hat.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: turquoise;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        img.avatar {
+            width: 30%;
+            border-radius: 50%;
+        }
+
+        .modal-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 10% auto 15% auto;
+            border: 1px solid #888;
+            width: 40%;
+            height: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <form id="login-form" class="modal-content animate">
+            <div class="imgcontainer">
+                <!-- You can add an image here if needed -->
+            </div>
+            <div class="container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" />
+                <br />
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" />
+                <br />
+                <button class="login-btn">LOGIN</button>
+            </div>
+            <label>
+                <p>Forget <a href="#">Password</a></p>
+            </label>
+            <label>
+                <p>No account? <a href="signup.html">Signup</a></p>
+            </label>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            // Define an array of email and password combinations
+            var validCredentials = [
+                { email: 'somilbakshi11@gmail.com', password: '1234' },
+                { email: 'mkd101@gmail.com', password: '5678' },
+                { email: 'example3@gmail.com', password: 'password3' }
+                // Add more combinations as needed
+            ];
+
+            var validLogin = false;
+
+            for (var i = 0; i < validCredentials.length; i++) {
+                if (email === validCredentials[i].email && pass === validCredentials[i].password) {
+                    validLogin = true;
+                    break;
+                }
+            }
+
+            if (validLogin) {
+                alert("Successful login!");
+                // Redirect to your desired page
+                window.location.href = "index.html";
+            } else {
+                alert("Wrong entry, invalid credentials.");
+            }
+        });
+    </script>
+</body>
+</html>

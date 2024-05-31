@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attendance Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('hat.jpg') center center no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .submit-button form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .submit-button input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Attendance Sheet</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Somil S Bakshi</td>
+                <td>
+                    <label><input type="radio" name="attendance" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance" value="On leave"> On leave</label>
+                </td>
+            
+            </tr>
+            <tr>
+                <td>Manmeet Kaur Dhanjal</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Saquib Ansari</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Soham Botle</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Shubham Pawar</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Aanchal Agnihotri</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Harsh Patole</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Manan Chotaliya</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nikhil Chaudhary</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sumeet Bhilare</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Aaradhya Chaudhary</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Amey Pathak</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Shreya Patil</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Aishwarya Dabak</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Anushka Bhoir</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Riya Gole</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Vaishnavi Gholap</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Shravani Rane</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> On leave</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Durgesh Bapat</td>
+                <td>
+                    <label><input type="radio" name="attendance2" value="Present"> Present</label>
+                    <label><input type="radio" name="attendance2" value="Absent"> Absent</label>
+                    <label><input type="radio" name="attendance1" value="On leave"> on leave</label>
+                </td>
+            </tr>
+            <!-- Add more rows for additional students -->
+        </tbody>
+    </table>
+    <div class="submit-button">
+        <form id="attendance-form">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+<script>
+    // Add an event listener to the form submission
+    document.getElementById("attendance-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Data is stored successfully!");
+    });
+</script>
+</body>
+
+</html>

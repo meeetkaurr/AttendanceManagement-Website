@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MarkAttendance</title>
+    <link rel="stylesheet" href="markattendancestyle.css">
+    <script>
+        function displayPopup(message) {
+            alert(message);
+        }
+
+        function markAttendance(status) {
+            // Here you can add your code to store data and set the appropriate message.
+            // For this example, let's assume the data is stored successfully.
+            var message = "Data has been stored successfully as " + status + ".";
+            displayPopup(message);
+        }
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="content">
+            <h1>MARK ATTENDANCE</h1>
+            <div>
+                <button type="button" onclick="markAttendance('PRESENT')"><span></span>PRESENT</button>
+                <button type="button" onclick="markAttendance('ABSENT')"><span></span>ABSENT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
